@@ -1,0 +1,617 @@
+﻿* {
+margin: 0;
+padding: 0;
+box-sizing: border-box
+}
+
+/* Fuentes y estilos */
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 43px;
+}
+h2, nav ul li a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 43px;
+    color: #212121;
+}
+
+.img-principal p{
+    color: rgb(228, 228, 228);
+}
+p {
+    color: #86878B;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+/* Botón */
+
+.btn {
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid #ffffff;
+    margin: 1px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Header */
+
+.header {
+    background-color: #000000;
+    height: 72px;
+}
+
+.header nav ul li a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    padding-left: 0px;
+    color: #b0b0b0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.header nav ul li {
+    margin: 0 18px;
+}
+
+.header img {
+    max-width: 79px;
+    max-height: 27px;
+}
+
+.nav-link {
+    color: #b0b0b0 !important;
+}
+.nav-link:hover {
+    color: #ffffff !important;
+}
+
+/* Imagen Principal */
+
+.img-principal {
+    background-image: url(img/img-principal.jpg);
+ }
+
+.img-principal .row {
+    padding-top: 11%;
+    padding-bottom:11%;
+}
+
+.oscurecer {
+    background-color: rgba(0,0,0, .5)
+}
+
+/* Botón */
+
+.btn-principal {
+    color: #fff;
+    width: 131px;
+    height: 38px;
+    font-size: 14px;
+    font-weight: 700;
+    border: 2px solid #fff;
+    margin-top: 20px;
+
+}
+
+.btn-principal:hover {
+    background-color: #fff;
+    color: black;
+}
+
+/* Formulario*/
+
+.formbox {
+    padding-right:0;
+    padding-left: 0;
+}
+.registro {
+
+    width: 100%;
+    max-width: 385px;
+    height: 362px;
+    background-color: white;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 4px;
+    justify-content: space-between;
+}
+
+.registro h3 {
+    font-weight: 700;
+    margin: 0;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    height: 53px;
+    background-color: #F5F5F5;
+    align-items: center;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+
+.formulario {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: none;
+    border: none;
+    border-bottom: 2px solid;
+    border-color: #D6D6D6;
+    outline: 0;
+}
+
+.boton {
+    color: #fff;
+    background-color: #FF9B51;
+    width: 100%;
+    height: 54px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration: none;
+    outline: 0;
+    border: 2px solid #FF9B51;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.boton:active {
+    color: black;
+}
+.boton:hover {
+        background-color: #ffa059;
+}
+.free {
+    color: #FF8B38;
+}
+
+/* Footer Img-Principal */
+
+.marselo {
+    border-bottom: 3px solid #b0b0b0;
+}
+
+.marselo .row {
+    background-color: #fff;
+}
+
+.marselo h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.logo1 {
+    max-height: 50px;
+    max-width: 50px;
+    padding: 0 5%;
+}
+
+
+
+/* TABS */
+
+.tabs .col-md-6{
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.fondo-gris {
+    background-color: #f5f5f5;
+}
+.tabs .row {
+    padding: 10% 0;
+}
+
+.tabs .col-md-6 h2 {
+    font-size:20px;
+    font-weight: bold;
+    line-height: 24px;
+}
+
+/* Botones TAB */
+
+.tab {
+    width: 9vw;
+    height: 9vw;
+    outline: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: #fff;
+    background-color: #333333;
+    border: none;
+}
+
+.tab:focus {
+    background-color: #FF8B38;
+}
+.tab:first-child {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom: 1px solid #c7c7c7;
+}
+.tab:last-child {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top: 1px solid #c7c7c7;
+}
+
+.tabs-download {
+
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    border: 2px solid #fff;
+    margin-top: 20px;
+    border-radius: 3px;
+    background-color: #FF9B51;
+    border: 4px solid #FF9B51;
+    box-shadow: 2px 2px 2px 0 #F5F5F5;
+
+}
+
+/* Sub List Section */
+
+
+#row-padding {
+    padding-top:10%;
+    padding-bottom: 10%;
+}
+
+/* --- Para responsive */
+
+.imajen-div {
+    width: 100%;
+}
+
+#nuve {
+        height: 20px;
+        width: 20px;
+}
+
+/* Estilos fuentes -- Sub List Section - Standard Picture Section */
+
+.sub-list-section p, sub-list-section2 p {
+    color: #86878B;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+
+}
+
+.sub-list-section h2 {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 43px;
+    color: #212121;
+}
+
+.sub-list-section h3 {
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 17px;
+    color: #212121;
+}
+
+/* WTIA-1 */
+
+.wtia h1, .price-title h1, .customers h1, .contacto-title h1 {
+    color: #212121;
+}
+
+/* AJUSTES DE PADDING */
+
+#padding-arriba {
+    padding-top:10%;
+}
+
+#padding-abajo {
+    padding-bottom:10%;
+}
+
+/* Logo */
+
+.logo-wtia {
+    display:inline-block;
+    font-size: 32px;
+    color: #ff8b38;
+}
+
+/* Filas */
+
+.basic p {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #F5F5F5;
+    padding: 3% 0;
+    margin:0;
+}
+
+.basic h2 {
+    color: #fff;
+    background-color: #333333;
+    padding: 3% 0;
+    border-bottom: 1px solid #fff;
+    margin:0;
+}
+
+.basic h4 {
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    font-size: 94px;
+    font-weight: bold;
+    line-height: 24px;
+}
+
+.basic span {
+    font-size:35px;
+}
+
+.niunpeso {
+    background-color: #333333;
+    height: 150px;
+    border-bottom: 6px solid #FF8B38;
+    flex-direction: column;
+    justify-content:center;
+    display: flex;
+    padding-top:30px;
+    margin:0;
+}
+
+.niunpeso h5 {
+    font-weight: 600;
+    font-style: italic;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #999999;
+
+}
+
+/* Panel medio */
+
+.basic #mid {
+    background-color: #FF8B38;
+    padding: 0;
+    font-size: 14px;
+}
+
+#medio {
+    border-bottom:0;
+}
+
+.boton-invisible {
+    display: none !important;
+}
+
+/* Customers */
+
+.burbuja {
+    width:90%;
+    max-width: 283px;
+    height:147px;
+    background-image: url(img/vurvuja.png);
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+    margin-top: 10%;
+}
+.burbuja p {
+    padding: 5%;
+    font-style: italic;
+    line-height: 17px;
+}
+
+/* Fila Pablo - Foto y nombres */
+
+.pablo-abajo {
+    margin-top:8px;
+    display: inline-flex;
+    width: 273px;
+    height: 70px;
+    align-items: center;
+}
+
+.texto-pablo h2, .texto-pablo p {
+    line-height: normal;
+    margin-top: 0;
+    padding-left: 16px;
+}
+
+.texto-pablo p{
+    padding-left: 14px;
+}
+
+/* Stylish Axure Design */
+
+.stylish .row {
+    padding-top: 8%;
+    padding-bottom: 8%;
+}
+.stylish {
+    background-image: url(img/stylish.png);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Fuente */
+
+.stylish p {
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    line-height: 20px;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+/* Contacto - Formulario */
+
+.formulario-contacto .row {
+    padding-bottom:5%;
+    padding-top:5%;
+    
+}
+
+.formulario2 {
+    width: 100%;
+    padding: 12px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: none;
+    border: none;
+    border-bottom: 1px solid;
+    border-color: #D6D6D6;
+    outline: 0;
+}
+
+#message {
+    padding-bottom:104px;
+}
+
+/* MOVILES */
+
+@media (max-width: 480px) {
+
+    /*Hero*/
+    #imajen {
+        width: 38%;
+    }
+
+    /* Formulario*/
+    .registro {
+        width: 100%;
+        max-width: none;
+        height:100%;
+        font-family: 'Raleway', sans-serif;
+        justify-content: space-between;
+        border-radius:0;
+    }
+    .formbox {
+        padding:0 !important;
+    }
+
+    .formulario {
+        width: 90%;
+        padding: 5% 10px;
+    }
+    .boton{
+        border-radius: 0;
+    }
+
+    /* RRSS */
+    .logo1 {
+        width:100%;
+    }
+
+    #texto-rrss {
+        display:none;
+    }
+
+}
+
+/* TABLETS */
+
+@media (max-width: 766px) {
+
+    #tabulaciones {
+        flex-direction: row !important;
+        align-content: center !important;
+        padding: 1% 3% 8%;
+    }
+    .tab {
+        margin-right:1px;
+    }
+    .tab:first-child {
+        border-bottom: 0;
+    }
+    .tab:last-child {
+        border-top: 0;
+    }
+
+    .alinear {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+    }
+
+    .sub-list-section .col-md-6, .row {
+        text-align: center !important;
+        display: inline-block !important;
+    }
+
+    .sub-list-section, .sub-list-section2 #row-padding {
+        padding: 10%;
+    }
+
+    .boton-invisible {
+        display:block !important;
+    }
+
+    .desaparecer {
+        display: none !important;
+    }
+
+    #tablet-container {
+        display: flex !important;
+        flex-flow: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .centrar {
+        align-items: center !important;
+    }
+
+    .tab {
+        width: 20vw;
+        height: 20vw;
+    }
+}
+
+/* Botón Formulario Contacto */
+
+.btn-contacto {
+    width: 146px;
+    height: 45px;
+    margin-top:2%;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #000;
+}
+
+.logos-footer {
+    color: #808080;
+    font-size: 24px;
+
+    text-decoration: none;
+}
+.logos-footer a{
+    margin: 0 1%;
+    color: inherit;
+}

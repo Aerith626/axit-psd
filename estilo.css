@@ -109,10 +109,6 @@ p {
 
 /* Formulario*/
 
-.formbox {
-    padding-right:0;
-    padding-left: 0;
-}
 .registro {
 
     width: 100%;
@@ -123,6 +119,7 @@ p {
     font-family: 'Raleway', sans-serif;
     border-radius: 4px;
     justify-content: space-between;
+    margin-left: auto;
 }
 
 .registro h3 {
@@ -180,6 +177,24 @@ p {
     color: #FF8B38;
 }
 
+/* RRSS */
+
+.redes {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 0 1em;
+}
+
+#texto-rrss{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#texto-rrss p{
+    margin: 0;
+}
+
 /* Footer Img-Principal */
 
 .marselo {
@@ -196,13 +211,15 @@ p {
     font-weight: bold;
 }
 
-.logo1 {
-    max-height: 50px;
-    max-width: 50px;
-    padding: 0 5%;
+.links-rrss {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-
+.logo1 {
+    max-width: 50px;
+}
 
 /* TABS */
 

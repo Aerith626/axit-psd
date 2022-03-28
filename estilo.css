@@ -26,7 +26,7 @@ h2, nav ul li a {
 }
 
 p {
-    color: #86878B;
+    color: #b0b0b0;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     font-weight: normal;
@@ -69,10 +69,10 @@ p {
 }
 
 .nav-link {
-    color: #b0b0b0 !important;
+    color: #b0b0b0;
 }
 .nav-link:hover {
-    color: #ffffff !important;
+    color: #ffffff;
 }
 
 /* Imagen Principal */
@@ -301,7 +301,7 @@ p {
 
 /* Estilos fuentes -- Sub List Section - Standard Picture Section */
 
-.sub-list-section p, sub-list-section2 p {
+.sub-list-section p, .sub-list-section2 p {
     color: #86878B;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
@@ -420,15 +420,19 @@ p {
 .grid-bubble {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    -ms-grid-columns: repeat(3, 1fr);
     gap: 5em;
 }
+
 .bubble {
     display: grid;
     gap: 3em .5em;
     grid-template-columns: 80px 1fr;
+    -ms-grid-columns: 80px 1fr;
     grid-template-areas: 'top top'
                 'left right';
     margin-bottom: 2em;
+    overflow: hidden;
 }
 
 .max-width-p {
@@ -486,7 +490,7 @@ p {
 
 /* Contacto - Formulario */
 
-.formulario-contacto .row {
+.form-contacto {
     padding-bottom:5%;
     padding-top:5%;
     
@@ -509,6 +513,33 @@ p {
     padding-bottom:104px;
 }
 
+/* Botón Formulario Contacto */
+
+.btn-contacto {
+    width: 146px;
+    height: 45px;
+    margin-top:2%;
+}
+
+/* Footer */
+
+footer {
+    background-color: #000;
+}
+
+.logos-footer {
+    color: rgb(206, 206, 206);
+    font-size: 24px;
+    margin: .5em;
+}
+.logos-footer a{
+    text-decoration: none;
+    color: inherit;
+    margin-right: .2em;
+    margin-left: .2em;
+}
+
+
 /* MOVILES */
 
 @media (max-width: 480px) {
@@ -516,6 +547,10 @@ p {
     /*Hero*/
     #imajen {
         width: 38%;
+    }
+
+    .img-principal .row {
+        padding-bottom: 0;
     }
 
     /* Formulario*/
@@ -526,6 +561,7 @@ p {
         font-family: 'Raleway', sans-serif;
         justify-content: space-between;
         border-radius:0;
+        margin-bottom: 0 !important;
     }
     .formbox {
         padding:0 !important;
@@ -538,33 +574,38 @@ p {
     .boton{
         border-radius: 0;
     }
-
-    /* RRSS */
-    .logo1 {
-        width:100%;
-    }
-
-    #texto-rrss {
-        display:none;
-    }
-
 }
 
 /* TABLETS */
 
-@media (max-width: 766px) {
+@media (max-width: 768px) {
+
+    .registro {
+        margin-left: 0;
+    }
+    .redes {
+        grid-template-columns: 1fr;
+        gap: 2em 0;
+    }
+    
+    .logo1 {
+        max-width: 50%;
+    }
 
     #tabulaciones {
         flex-direction: row !important;
         align-content: center !important;
         padding: 1% 3% 8%;
     }
+
     .tab {
         margin-right:1px;
     }
+
     .tab:first-child {
         border-bottom: 0;
     }
+    
     .tab:last-child {
         border-top: 0;
     }
@@ -575,9 +616,10 @@ p {
         justify-content: center;
         align-content: center;
         flex-direction: column;
+        margin-bottom: 2em;
     }
 
-    .sub-list-section .col-md-6, .row {
+    .row {
         text-align: center !important;
         display: inline-block !important;
     }
@@ -609,29 +651,14 @@ p {
         width: 20vw;
         height: 20vw;
     }
+
+    footer .row {
+        display: block !important;
+    }
+
+    footer p {
+        margin: 0;
+        padding-bottom: 1em;
+    }
 }
 
-/* Botón Formulario Contacto */
-
-.btn-contacto {
-    width: 146px;
-    height: 45px;
-    margin-top:2%;
-}
-
-/* Footer */
-
-.footer {
-    background-color: #000;
-}
-
-.logos-footer {
-    color: #808080;
-    font-size: 24px;
-
-    text-decoration: none;
-}
-.logos-footer a{
-    margin: 0 1%;
-    color: inherit;
-}

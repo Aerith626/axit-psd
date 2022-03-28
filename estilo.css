@@ -421,43 +421,50 @@ p {
 
 /* Customers */
 
-.burbuja {
-    width:90%;
-    max-width: 283px;
-    height:147px;
-    background-image: url(img/vurvuja.png);
-    display: flex;
-    text-align: left;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 5px;
-    margin-top: 10%;
+.grid-bubble {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5em;
 }
-.burbuja p {
-    padding: 5%;
+.bubble {
+    display: grid;
+    gap: 3em .5em;
+    grid-template-columns: 80px 1fr;
+    grid-template-areas: 'top top'
+                'left right';
+    margin-bottom: 2em;
+}
+
+.max-width-p {
+    max-width: 31ch;
+    position: relative;
+    padding: 1.4rem 1rem 0;
+    grid-area: top;
     font-style: italic;
     line-height: 17px;
+    text-align: left;
 }
 
-/* Fila Pablo - Foto y nombres */
-
-.pablo-abajo {
-    margin-top:8px;
-    display: inline-flex;
-    width: 273px;
-    height: 70px;
-    align-items: center;
+.max-width-p::after {
+    content:url(img/vurvuja.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
-.texto-pablo h2, .texto-pablo p {
-    line-height: normal;
-    margin-top: 0;
-    padding-left: 16px;
+.img-bubble {
+    grid-area: left;
+}
+.txt-bubble {
+    grid-area: right;
 }
 
-.texto-pablo p{
-    padding-left: 14px;
+.txt-bubble h2, .txt-bubble p{
+    margin: 0;
+    text-align: left;
 }
+
 
 /* Stylish Axure Design */
 

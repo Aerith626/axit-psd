@@ -24,6 +24,7 @@ h2, nav ul li a {
 .img-principal p{
     color: rgb(228, 228, 228);
 }
+
 p {
     color: #86878B;
     font-family: 'Open Sans', sans-serif;
@@ -78,6 +79,8 @@ p {
 
 .img-principal {
     background-image: url(img/img-principal.jpg);
+    background-size: cover;
+    background-position: center;
  }
 
 .img-principal .row {
@@ -99,7 +102,6 @@ p {
     font-weight: 700;
     border: 2px solid #fff;
     margin-top: 20px;
-
 }
 
 .btn-principal:hover {
@@ -110,12 +112,10 @@ p {
 /* Formulario*/
 
 .registro {
-
     width: 100%;
     max-width: 385px;
     height: 362px;
     background-color: white;
-    padding: 0;
     font-family: 'Raleway', sans-serif;
     border-radius: 4px;
     justify-content: space-between;
@@ -124,7 +124,6 @@ p {
 
 .registro h3 {
     font-weight: 700;
-    margin: 0;
     width: 100%;
     font-size: 20px;
     text-align: center;
@@ -137,6 +136,10 @@ p {
     border-top-right-radius: 4px;
 }
 
+.free {
+    color: #FF8B38;
+}
+
 
 .formulario {
     width: 70%;
@@ -147,8 +150,7 @@ p {
     font-size: 14px;
     color: none;
     border: none;
-    border-bottom: 2px solid;
-    border-color: #D6D6D6;
+    border-bottom: 2px solid #D6D6D6;
     outline: 0;
 }
 
@@ -173,9 +175,6 @@ p {
 .boton:hover {
         background-color: #ffa059;
 }
-.free {
-    color: #FF8B38;
-}
 
 /* RRSS */
 
@@ -197,15 +196,12 @@ p {
 
 /* Footer Img-Principal */
 
-.marselo {
+.redes-row {
     border-bottom: 3px solid #b0b0b0;
-}
-
-.marselo .row {
     background-color: #fff;
 }
 
-.marselo h3 {
+.redes-row h3 {
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     font-weight: bold;

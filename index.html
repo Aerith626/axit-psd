@@ -26,7 +26,6 @@
     <!-- Header -->
 
     <header class="header">
-        <!-- Contenedor para poder centrar el contenido a ancho especifico-->
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -131,40 +130,50 @@
     </div>
 
     <!-- Tabs -->
-
-    <div class="tabs fondo-gris">
-        <div class="container ">
-            <div class="row d-flex align-items-center ">
-                <div id="tabulaciones" class="col-md-2">
-                    <input class="tab" type="radio" value="TAB 1" />
-                    <input class="tab" type="radio" value="TAB 2" />
-                    <input class="tab" type="radio" value="TAB 3" />
-                </div>
-                <div class="col-md-6 alinear">
-                    <h2>Tabs with soft transitioning effect.</h2>
-                    <p>
-                        Lorem ipsum dolor si onsectetur adipiscing elit. Aenean euismod
-                        bibendum laoreet. Pro in gravida dolor sit amet lacus accumsan et viverra
-                        justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
-                        penatibus et magnis dis parturient montes.
-                        <br> <br>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
-                        bibendum laoreet.
-                    </p>
-                    <a href="#" class="btn tabs-download"> Download </a>
-                </div>
-                <div class="col-md-4 d-flex justify-content-center">
-                    <img class="imajen-div" src="img/siudad.png" />
+    <section id="tab">
+        <div class="fondo-gris">
+            <div class="container">
+                <div class="row padding-10">
+                    <div class="tabs">
+                        <div class="tabs__sidebar">
+                            <div class="tabs__btn" data-btn-tab="1">Tab 1</div>
+                            <div class="tabs__btn" data-btn-tab="2">Tab 2</div>
+                            <div class="tabs__btn" data-btn-tab="3">Tab 3</div>
+                        </div>
+                        <div class="tabs__content" data-tab="1">
+                            <h2>Tabs with soft transitioning effect.</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eum, doloribus ipsam iste a dicta illo iure expedita culpa nostrum. Tempora ut consectetur blanditiis ducimus at, delectus sit dignissimos sint.
+                                <br>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quia excepturi explicabo. Similique, delectus harum!
+                            </p>
+                            <a href="#" class="boton tabs__download">Download</a>
+                        </div>
+                        <div class="tabs__content" data-tab="2">
+                            <h2>Tabs with soft transitioning effect.</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ducimus consequuntur illo aliquam culpa libero incidunt nobis! Similique iusto laudantium at recusandae quaerat aliquid sequi quo, maxime nam, nihil quod.
+                                <br>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, magnam. Accusamus maiores earum quo.
+                            </p>
+                        </div>
+                        <div class="tabs__content" data-tab="3">
+                            <h2>Tabs with soft transitioning effect.</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique optio, laboriosam quam sapiente iusto iure doloremque quo ipsum maxime aliquam mollitia earum pariatur officiis inventore magnam enim maiores placeat!
+                                <br>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus neque magnam pariatur exercitationem cum, hic tempora.
+                            </p>
+                        </div>
+                        <img class="tabs__img" src="img/siudad.png" alt="Imagen de ciudad">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Sub list section -->
 
     <div class="sub-list-section">
         <div class="container">
-            <div id="row-padding" class="row d-flex align-items-center">
+            <div class="row-padding row d-flex align-items-center">
 
                 <div class="col-md-6"><img class="imajen-div" src="img/sls.png" /> </div>
 
@@ -218,7 +227,7 @@
 
     <div class="sub-list-section2 fondo-gris">
         <div class="container">
-            <div id="row-padding" class="row d-flex align-items-center">
+            <div class="row-padding row d-flex align-items-center">
 
                 <!-- Columna 2 -->
 
@@ -524,4 +533,5 @@
 
 </body>
 
+<script src="script/script.js"></script>
 </html>

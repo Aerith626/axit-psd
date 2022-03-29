@@ -1,4 +1,5 @@
 
+// Funcionalidad de TABS
 
 function actTabs () {
     document.querySelectorAll('.tabs__btn').forEach(btn => {

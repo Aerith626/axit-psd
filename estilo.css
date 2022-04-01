@@ -257,10 +257,21 @@ p {
     user-select: none;
 }
 
+.tabs__download:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: #dd642c;
+    border-color: #dd642c;
+    transition: 200ms ease-out background-color,
+    200ms ease-out border-color;
+}
+
 .tabs__download {
     width: 146px;
     height: 45px;
     margin-right: auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .2);
 }
 
 .padding-10 {
@@ -405,6 +416,17 @@ p {
     display: flex;
     padding-top:30px;
     margin:0;
+}
+
+.btn__invi {
+    color: #fff;
+    background-color:#FF8B38;
+}
+
+.btn__invi:hover {
+    color: #fff;
+    background-color:#dd642c;
+    transition: 200ms ease-out background-color;
 }
 
 .niunpeso h5 {
@@ -559,41 +581,7 @@ footer {
 }
 
 
-/* MOVILES */
 
-@media (max-width: 480px) {
-
-    /*Hero*/
-    #imajen {
-        width: 38%;
-    }
-
-    .img-principal .row {
-        padding-bottom: 0;
-    }
-
-    /* Formulario*/
-    .registro {
-        width: 100%;
-        max-width: none;
-        height:100%;
-        font-family: 'Raleway', sans-serif;
-        justify-content: space-between;
-        border-radius:0;
-        margin-bottom: 0 !important;
-    }
-    .formbox {
-        padding:0 !important;
-    }
-
-    .formulario {
-        width: 90%;
-        padding: 5% 10px;
-    }
-    .boton{
-        border-radius: 0;
-    }
-}
 
 /* TABLETS */
 
@@ -699,3 +687,38 @@ footer {
     }
 }
 
+/* MOVILES */
+
+@media (max-width: 480px) {
+
+    /*Hero*/
+    
+    .img-principal .row {
+        padding-bottom: 0;
+    }
+
+    /* Formulario*/
+    .registro {
+        width: 100%;
+        max-width: none;
+        height:100%;
+        justify-content: space-between;
+        border-radius:0;
+    }
+    .formbox {
+        padding:0 !important;
+    }
+
+    .formulario {
+        width: 90%;
+        padding: 5% 10px;
+    }
+    .boton {
+        border-radius: 0;
+    }
+
+    .tabs__btn {
+        height: 80px;
+        width: 80px;
+    }
+}

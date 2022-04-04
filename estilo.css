@@ -588,6 +588,16 @@ footer {
 
 @media (max-width: 766px) {
 
+
+    .navbar-collapse {
+        background: #000000;
+        z-index: 1;
+    }
+
+    header .row {
+        width: 100%;
+    }
+
     /* Alinear */
 
     .alinear {
